@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atheesh | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* Animation for sliding in */
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .slide-in {
+      animation: slideInFromLeft 1s ease-out forwards;
+    }
+  </style>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+      <div class="logo slide-in">Atheesh</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  </header>
+
+  <section id="home" class="section home-hero">
+    <div class="home-content">
+      <div class="text-zone">
+        <h1 class="slide-in">Hi There,</h1>
+        <h2 class="slide-in">I am <span class="name">Atheesh <span class="highlight"></span></span></h2>
+        <h3 class="slide-in"><span class="typing" id="typing"></span></h3>
+
+        <a href="#about"><button class="cta-btn">About Me</button></a>
+
+        <div class="social-icons no-hover">
+          <a href="https://www.instagram.com/atheesh_offi" target="_blank">
+            <img src="../portfolio/2.avif" alt="Instagram" width="30" />
+          </a>
+          <a href="https://www.linkedin.com/in/atheesh-a-52834126b" ...>
+
+            <img src="../portfolio/linkedin.png" alt="LinkedIn" width="30" />
+          </a>
+        </div>
+      </div>
+
+     
+    </div>
+  </section>
+
+  <section class="about" id="about">
+  <h2><span>About</span> Me</h2>
+  <div class="about-content">
+    
+    <div class="about-text">
+      <h3>I'm Atheesh A</h3>
+      <p>
+        Hi, I'm Atheesh A, a B.Tech IT student at Ramco Institute of Technology with a deep passion for web development.
+        I enjoy building modern, interactive websites that deliver smooth and engaging user experiences.
+        I’m committed to learning the core principles of web technologies and continuously expanding my skills in both frontend and backend development.
+        Every project I take on is a chance to grow, solve real-world problems, and create meaningful digital experiences.
+        I'm always excited to explore new challenges and bring innovative ideas to life through clean and efficient code.
+      </p>
+      <p><strong>Email:</strong> atheesh200@gmail.com</p>
+      <p><strong>Location:</strong> Tamil Nadu, India</p>
+      <a href="./Atheesh (1).pdf" class="resume-btn" target="_blank">Resume</a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>Bachelor of Technology in Information Technology</h3>
+      <p>Ramco Institute of Technology, 2022 - 2026</p>
+    </div>
+    <div class="education-item">
+      <h3>Higher Secondary School</h3>
+      <p>Nadar HR Sec School, Rajapalayam, 2021 - 2022</p>
+    </div>
+  </section>
+  
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">
+        <img width="96" height="96" src="https://img.icons8.com/color/96/python--v1.png" alt="python--v1"/>
+        <h3>Python</h3>
+      </div>
+      <div class="skill">
+        <img src="https://img.icons8.com/fluency/96/javascript.png" alt="javascript"/>
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill">
+        <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="html-5--v1"/>
+        <h3>HTML</h3>
+      </div>
+      <div class="skill">
+        <img src="https://img.icons8.com/fluency/96/node-js.png" alt="node-js"/>
+        <h3>NodeJs</h3>
+      </div>
+      <div class="skill">
+        <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>
+        <h3>React</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Short description of your first project.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Short description of your second project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+   
+    <div class="contact-info">
+        <p>Contact: 
+            <a href="mailto:atheesh200@gmail.com">atheesh200@gmail.com</a> | 
+            <a href="tel:+1234567890">6374986236</a> | 
+            <a href="https://www.instagram.com/atheesh_offi" target="_blank">Instagram</a>
+        </p>
+    </div>
+</footer>
+
+
+</body>
+</html>
