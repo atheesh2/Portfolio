@@ -9,7 +9,7 @@ body {
 }
 
 .cta-btn {
-    background-color: #3498db;
+    background-color: #dbbb34;
     color: white;
     padding: 12px 25px;
     border: none;
@@ -32,6 +32,9 @@ a {
 ul {
     list-style: none;
     padding: 0;
+}
+.logo.slide-in{
+    padding: 10px;
 }
 
 h1, h2, h3 {
@@ -59,7 +62,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 25px;
+    padding: 10px;
 }
 
 nav {
@@ -71,6 +74,8 @@ nav {
 .nav-links {
     display: flex;
     gap: 20px;
+    
+
 }
 
 .nav-links li {
@@ -120,8 +125,8 @@ h2, h3 {
     background: linear-gradient(135deg, #3498db, #9b59b6);
     color: white;
     text-align: center;
-    height: 150%;
-    padding: 15%;
+    /* height: 150%; */
+    padding: 50px;
 }
 
 p {
@@ -153,7 +158,9 @@ html {
 }
 
 .text-zone {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .education-item {
@@ -223,85 +230,123 @@ html {
     font-size: 20px;
 }
 
-#projects {
-    background-color: #ffffff;
-    padding: 50px 20px;
-}
-
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-    justify-items: center;
     margin-top: 30px;
 }
 
 .project-card {
-    background-color: #3498db;
-    color: white;
+    background-color: #ffffff;
+    color: #333;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    width: 800px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
-    font-size: 24px;
-}
-
-.project-card p {
-    font-size: 16px;
-}
-
-#contact {
-    background-color: #ecf0f1;
-}
-
-#contact h2 {
-    font-size: 36px;
+    font-size: 20px;
+    margin-bottom: 10px;
     color: #2c3e50;
 }
 
-#contact h2:hover {
-    color: #3498db;
+.project-card p {
+    font-size: 15px;
+    color: #7f8c8d;
 }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+
+#contact {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-#contact input,
-#contact textarea {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+#contact h2 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  position: relative;
 }
 
-#contact button {
-    width: 80%;
-    font-size: 18px;
-    padding: 10px;
-    background-color: #2980b9;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#contact h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #dbbb34;
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
-#contact button:hover {
-    background-color: #3498db;
+#contact-form {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f9f9fc;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  resize: none;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+#contact-form button.cta-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#contact-form button.cta-btn:hover {
+  background-color: #3498db;
+}
+
 
 footer {
     background-color: #2c3e50;
@@ -328,36 +373,62 @@ footer .contact-info a:hover {
     color: #3498db;
 }
 
-.home-hero {
-    background-color: #ffffff;
-    padding: 60px 30px;
-    height: 100%;
-}
-
-.home-content {
+.home-hero{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    height: 100%;
+    height: 76vh;
+    
+}
+/* Internship Item Styling */
+.internship-item {
+  background-color: #ffffff;
+  border-left: 4px solid #4CAF50;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.text-zone {
-    flex: 1;
-    min-width: 300px;
+/* Paragraph Text */
+.internship-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .internship-item {
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+    margin: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .internship-item p {
+    font-size: 0.95rem;
+  }
 }
 
 .text-zone h1 {
     font-size: 60px;
-    color: #2c3e50;
+    color: #350ec0;
 }
 
 .text-zone h2 {
     font-size: 40px;
-    color: #2c3e50;
+    color: #350ec0;
     margin-top: 10px;
 }
+span.name {
+    color: white;
+}
+
 
 .text-zone .highlight {
     color: #ff7f50;
@@ -365,17 +436,19 @@ footer .contact-info a:hover {
 
 .typing {
     font-size: 24px;
-    font-weight: 500;
-    color: #9b59b6;
+    font-weight: 800;
+    color: #4fc974;
     min-height: 30px;
     display: inline-block;
     margin-top: 10px;
 }
 
 .social-icons {
+   display: flex;
+    gap: 25px;
     margin-top: 20px;
-    display: flex;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-zone {
@@ -395,6 +468,7 @@ footer .contact-info a:hover {
     transform: scale(1.3);
     transition: filter 0.3s ease;
     border-radius: 8px;
+
 }
 
 .social-icons:not(.no-hover) a[href*="instagram"]:hover img {
@@ -408,7 +482,14 @@ footer .contact-info a:hover {
 .social-icons:not(.no-hover) a[href*="github"]:hover img {
     filter: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(746%) hue-rotate(169deg) brightness(93%) contrast(89%);
 }
-
+.social-icons.no-hover{
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 5px 0;
+    
+}
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
@@ -492,6 +573,20 @@ footer .contact-info a:hover {
 
 .resume-btn:hover {
   background: #0056b3;
+}
+
+
+.profile-image {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.profile-image img{
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 576px) {
@@ -592,4 +687,8 @@ footer .contact-info a:hover {
     #contact form {
         width: 100%;
     }
+}
+.about-description{
+    justify-content: center;
+    text-align: justify;
 }
