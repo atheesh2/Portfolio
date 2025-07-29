@@ -303,7 +303,7 @@ html {
 }
 
 #contact-form {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   background-color: #f9f9fc;
   padding: 40px;
@@ -317,7 +317,7 @@ html {
 
 #contact-form input,
 #contact-form textarea {
-  width: 100%;
+  width: 80%;
   padding: 15px;
   font-size: 16px;
   border: 1px solid #ddd;
@@ -335,7 +335,7 @@ html {
 }
 
 #contact-form button.cta-btn {
-  width: 100%;
+  width: 80%;
   padding: 14px;
   font-size: 18px;
   border-radius: 10px;
