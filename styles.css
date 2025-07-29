@@ -685,8 +685,8 @@ span.name {
     }
 
     #contact form {
-        width: 80%;
-    
+        width: 100%;
+    }
 }
 .about-description{
     justify-content: center;
