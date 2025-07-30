@@ -6,6 +6,8 @@ font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     background-color: #f4f4f9;
     color: #333;
+    overflow-x: hidden;
+    
 }
 
 .cta-btn {
@@ -378,6 +380,7 @@ footer .contact-info a:hover {
     justify-content: space-around;
     align-items: center;
     height: 76vh;
+    position: relative;
     
 }
 /* Internship Item Styling */
