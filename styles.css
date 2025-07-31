@@ -738,3 +738,93 @@ span.name {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
+/* Additional Mobile-Specific Styles */
+@media screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .text-zone h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .text-zone h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .image-zone {
+    margin-top: 20px;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .skills-list {
+    gap: 15px;
+  }
+
+  .skill {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .about-text {
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .project-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .project-card img {
+    height: auto;
+  }
+
+  #contact-form {
+    padding: 20px;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
